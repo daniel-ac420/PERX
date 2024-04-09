@@ -1,0 +1,81 @@
+/* --- ADVANTAGES --- */
+
+.section--advantages {
+	padding-top: 75px;
+	margin-bottom: 100px;
+}
+
+.advantages__items {
+	display: flex;
+	gap: 36px;
+}
+
+.advantages__item {
+/*	flex-basis: calc(100% / 3);*/
+	padding: 36px;
+	box-sizing: border-box;
+	text-align: center;
+	border: 1px solid var(--colorGray);
+	border-radius: 18px;
+}
+
+.advantages__item-icon {
+	margin-bottom: 16px;
+}
+
+.advantages__item-title {
+	margin-bottom: 16px;
+	font-size: 24px;
+	line-height: 1;
+}
+
+.advantages__item-description {
+	color: var(--colorGrayLight);
+}
+
+
+.section--advantages .swiper-slide {
+    height: unset;
+}
+
+.section--advantages .swiper-pagination {
+    position: relative;
+    /* display: none; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(20px);
+}
+
+.section--advantages .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .section--advantages .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,14px);
+}
+
+.section--advantages .swiper-pagination-bullet {
+    background-color: var(--colorGrayBullets);
+    opacity: 1;
+}
+
+.section--advantages .swiper-pagination-bullet-active {
+    padding: 4px;
+    background-color: transparent;
+    border: 4px solid var(--colorPurple);
+}
+
+
+
+@media (max-width: 534px) {
+	
+	.section--advantages {
+		padding-top: 32px;
+		margin-bottom: 36px;
+	}
+	
+	.advantages__item-title {
+		font-size: 20px;
+	}
+	
+}
+/* ↑↑↑ 534px ↑↑↑ */
+

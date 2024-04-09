@@ -1,0 +1,253 @@
+.section--availables {
+	padding: 75px 0 100px;
+	background-color: var(--colorGrayBack);
+}
+
+.availables-card {
+/*	max-width: 303px;*/
+	background-color: var(--colorWhite);
+	border-radius: 16px;
+}
+
+.availables-card__link:hover {
+	transform: unset;
+	border: unset;
+	border-radius: 0 0 32px 32px;
+}
+
+.availables-card__link {
+	position: relative;
+	display: inline-block;
+    overflow: hidden;
+}
+
+.availables-card__image {
+    display: block;
+	width: 100vw;
+    border-radius: 16px 16px 0 0;
+    transition: 1s;
+}
+
+.availables-card__image:hover {
+	transform: scale(1.15);
+    filter: contrast(105%) brightness(125%) saturate(105%);
+}
+
+.availables-card__marker {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	padding: 6px 10px;
+	font-size: 11px;
+	line-height: 1.1;
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 1px solid var(--colorBlack);
+	border-radius: 12px;
+}
+
+.availables-card__marker--gift {
+	color: var(--colorMarkerViolet);
+	border-color: var(--colorMarkerViolet);
+}
+
+.availables-card__marker--installment {
+	color: var(--colorMarkerBlue);
+	border-color: var(--colorMarkerBlue);
+}
+
+.availables-card__marker--promotion {
+	color: var(--colorMarkerPurple);
+	border-color: var(--colorMarkerPurple);
+}
+
+.availables-card__marker--service {
+	color: var(--colorMarkerViolet);
+	border-color: var(--colorMarkerViolet);
+}
+
+.availables-card__marker--tires {
+	color: var(--colorMarkerBlueDark);
+	border-color: var(--colorMarkerBlueDark);
+}
+
+.availables-card__info {
+	padding: 12px 18px 16px;
+}
+
+.availables-card__title {
+	margin-bottom: 4px;
+	font-size: 24px;
+	line-height: 1;
+}
+
+.availables-card__description {
+	margin-bottom: 12px;
+	color: var(--colorGrayAlternate);
+}
+
+.availables-card__properties {
+	margin-bottom: 12px;
+	font-size: 14px;
+	color: var(--colorGrayAlternate);
+}
+
+.availables-card__properties-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.availables-card__status {
+	margin-bottom: 16px;
+}
+
+.availables-card__status-marker {
+	padding: 6px 8px;
+	background-color: #colorGrayBack;
+	border-radius: 12px;
+	
+}
+
+.availables-card__status-marker--stock {
+	
+}
+
+.availables-card__status-marker--transit {
+	
+}
+
+.availables-card__status-description {
+	
+}
+
+.availables-card__price-box {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.availables-card__price-current {
+	font-family: "Proxima Nova Bold", Arial, sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.availables-card__price-full {
+	font-size: 12px;
+	line-height: 1;
+	text-decoration: line-through;
+	color: var(--colorGrayLight);
+}
+
+.availables-card__credit {
+	margin-bottom: 16px;
+	font-family: "Proxima Nova Bold", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	color: var(--colorGrayLight);
+	
+}
+
+.availables-card__place {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.availables-card__place-icon {
+	
+}
+
+.availables-card__place-description {
+	
+}
+
+.availables__navigation--prev, 
+.availables__navigation--next {
+    width: 50px;
+    height: 50px;
+    background-color: var(--colorBlack);
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(38, 38, 38, 0.1);
+    transition: all 0.5s;
+}
+
+.availables__navigation-icon {
+    transition: all 0.75s;
+}
+
+.availables__navigation--prev:hover, 
+.availables__navigation--next:hover {
+    background-color: rgba(38, 38, 38, 0.75);
+    transform: scale(1.15);
+}
+
+.availables__navigation--prev:hover .availables__navigation-icon, 
+.availables__navigation--next:hover .availables__navigation-icon {
+    opacity: 0.75;
+}
+
+.section--availables .swiper-pagination {
+    position: relative;
+	display: none;
+    height: 40px;
+/*    display: flex;*/
+    align-items: center;
+    justify-content: center;
+    transform: translateY(20px);
+}
+
+.section--availables .swiper-pagination-bullet {
+    background-color: var(--colorGrayBullets);
+    opacity: 1;
+}
+
+.section--availables .swiper-pagination-bullet-active {
+    padding: 4px;
+    background-color: transparent;
+    border: 4px solid var(--colorPurple);
+}
+
+.section--availables .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.section--availables .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 var(--swiper-pagination-bullet-horizontal-gap,14px);
+}
+
+.availables-cards.swiper {
+    overflow: unset;
+}
+
+.availables__navigation--prev {
+	left: -25px;
+}
+
+.availables__navigation--next {
+	right: -25px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+	.section--availables .swiper-pagination {
+		display: flex;
+	}
+	
+	.availables__navigation {
+		display: none;
+	}
+
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+
+@media (max-width: 534px) {
+	
+	.section--availables {
+		padding: 32px 0 36px;
+	}
+	
+}
+/* ↑↑↑ 534px ↑↑↑ */

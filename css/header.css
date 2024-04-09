@@ -1,0 +1,442 @@
+﻿/* --- HEADER-TOP --- */
+
+.header__top {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	height: 70px;
+	max-height: 70px;
+	background-color: var(--colorWhite);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header__top-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-box {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.navigation-menu-button {
+	width: 24px;
+	height: 24px;
+	padding: unset;
+	background-image: url("../icons/header/menu.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 2px solid transparent;
+}
+
+.button.navigation-menu-button:hover {
+	filter: brightness(0.8);
+	transform: scale(1.1);
+	border: 2px solid transparent;
+}
+
+.logo {
+	display: inline-block;
+	align-items: center;
+	transition: all 0.75s;
+}
+
+.logo:hover {
+	filter: brightness(0.8);
+	transform: scale(1.05);
+	border: none;
+}
+
+.logo:focus {
+	filter: brightness(1.25);
+    transform: scale(1.1);
+	outline: 2px solid var(--colorBlackDark);
+	outline-offset: 10px;
+}
+
+.tagline {
+	font-weight: 700;
+	font-size: 20px;
+	font-family: "Proxima Nova Bold", Arial, sans-serif;
+	line-height: 1;
+}
+
+.contacts-box {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.contacts-box__phone {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	font-family: "Proxima Nova Bold", Arial, sans-serif;
+	border: 1px dashed transparent;
+	cursor: pointer;
+	transition: all 0.75s;
+}
+
+.contacts-box__phone:hover {
+	border-bottom: 1px dashed var(--colorBlack);
+	transform: scale(1.1);
+}
+
+.contacts-box__number:hover {
+	border: unset;
+	transform: unset;
+}
+
+.contacts-box__icon--phone {
+	width: 20px;
+	height: 20px;
+	background-image: url("../icons/header/banner-icon-phone.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.contacts-box__ask {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	transition: all 0.5s;
+}
+
+.contacts-box__icon--ask {
+	width: 15px;
+	height: 15px;
+	background-image: url("../icons/header/banner-icon-ask.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.contacts-box__ask:hover .contacts-box__icon--ask {
+	filter: invert(1);
+}
+
+
+
+/* --- BANNER --- */
+
+.header__bottom {
+	margin-top: 70px;
+	color: var(--colorWhite);
+}
+
+.banner {
+	display: flex;
+	align-items: center;
+	height: calc(100vh - 70px);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#banner-01 {
+	background-image: url("../images/banner/desktop/banner-futuristic-retro-wave-synth-wave-car-retro-sport-car-with-neon-backlight-contours.png"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+}
+
+#banner-02 {
+	background-image: url("../images/banner/desktop/4d6ecb41334089.57a1dd5b49178.png"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+}
+
+#banner-03 {
+	background-image: url("../images/banner/desktop/1086945-neon-car-vehicle-retro-games-Lamborghini-1980s-sports-car-DeLorean-synthwave-performance-car-supercar-land-vehicle-automotive-design-automobile-make-model-car-luxury-ve.png"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+}
+
+#banner-04 {
+	background-image: url("../images/banner/desktop/federico-zimbaldi-by-federico-zimbaldi-countach-retro-game-r.png"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+}
+
+#banner-05 {
+	background-image: url("../images/banner/desktop/synthpop-synth-retrowave-electronic-darkwave-synth-pop-syn-6.png"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+}
+
+#banner-06 {
+	background-image: url("../images/banner/desktop/wice-star-fighter-star-fighter-wice-magnatron-2-0-magnatron_webp.png"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+}
+
+.banner-info {
+	max-width: 400px;
+}
+
+.subtitle {
+	margin-bottom: 16px;
+	font-size: 20px;
+	line-height: 1;
+}
+
+.banner__description {
+	margin-bottom: 24px;
+}
+
+.banner__button:hover {
+	transform: unset;
+}
+
+.banner__button-inner {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.banner__button-decor {
+	width: 18px;
+	height: 18px;
+	background-image: url("../icons/banner/banner-arrow.svg");
+	transition: all 0.75s;
+}
+
+.banner__button:hover .banner__button-decor {
+	filter: invert(1);
+}
+
+.banner__navigation--prev, 
+.banner__navigation--next {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+	border: 2px solid var(--colorWhite);
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(38, 38, 38, 0.1);
+    transition: all 0.5s;
+}
+
+.banner__navigation--prev:hover, 
+.banner__navigation--next:hover {
+	background-color: var(--colorWhiteTransparent);
+	transform: scale(1.15);
+}
+
+.banner__navigation-icon {
+	transition: all 0.75s;
+}
+
+.banner__navigation--prev:hover .banner__navigation-icon, 
+.banner__navigation--next:hover .banner__navigation-icon{
+	opacity: 0.75;
+	filter: invert(0.75);
+}
+
+.header .swiper-pagination {
+    position: relative;
+    display: flex;
+    align-items: center;
+	left: -29px; /* 13px margin-left + 16px width */
+	bottom: 54px;
+}
+
+.header .swiper-pagination-bullet {
+	background-color: var(--colorWhite);
+	opacity: 1;
+}
+
+.header .swiper-pagination-bullet-active {
+	padding: 4px;
+	background-color: transparent;
+	border: 4px solid var(--colorPurple);
+}
+
+.header .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.header .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,13px);
+}
+
+.swiper-wrapper + .wrapper--short {
+	height: 0;
+}
+
+.header__bottom .swiper-button-prev {
+	left: 25%;
+}
+
+.header__bottom .swiper-button-next {
+	right: 25%;
+}
+
+
+/* --- SCROLL --- */
+
+.header_hidden {
+  transform: translateY(-100%);
+}
+
+
+/* --- ADAPTING --- */
+
+@media (max-width: 1920px) {
+	
+	.header__bottom .swiper-button-prev {
+		left: 15%;
+	}
+
+	.header__bottom .swiper-button-next {
+		right: 15%;
+	}
+	
+}
+/* ↑↑↑ 1920px ↑↑↑ */
+
+
+
+@media (max-width: 1680px) {
+	
+	
+	.header__bottom .swiper-button-prev {
+		left: 10%;
+	}
+
+	.header__bottom .swiper-button-next {
+		right: 10%;
+	}
+	
+}
+/* ↑↑↑ 1680px ↑↑↑ */
+
+
+
+@media (max-width: 1440px) {
+	
+	.header__bottom .swiper-button-prev {
+		left: 5%;
+	}
+
+	.header__bottom .swiper-button-next {
+		right: 5%;
+	}
+	
+}
+/* ↑↑↑ 1440px ↑↑↑ */
+
+
+
+@media (max-width: 1366px) {
+	
+	.header__bottom .swiper-button-prev {
+		left: 0.5%;
+	}
+
+	.header__bottom .swiper-button-next {
+		right: 0.5%;
+	}
+	
+}
+/* ↑↑↑ 1366px ↑↑↑ */
+
+
+
+@media (max-width: 1024px) {
+	
+	.banner {
+		align-items: unset;
+		text-align: center;
+	}
+	
+	#banner-01 {
+		background-image: url("../images/banner/mobile/banner-futuristic-retro-wave-synth-wave-car-retro-sport-car-with-neon-backlight-contours--mobile.png"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+	}
+	
+	#banner-02 {
+		background-image: url("../images/banner/mobile/1071c343822951d84adce04df969ffcb.jpg"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+	}
+	
+	#banner-03 {
+		background-image: url("../images/banner/mobile/4k-car-2160-x-3840-background-5b3u1ykvaeb0ddgt.jpg"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+	}
+	
+	#banner-04 {
+		background-image: url("../images/banner/mobile/lnN_vCuQFxI.jpg"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+	}
+
+	#banner-05 {
+		background-image: url("../images/banner/mobile/black-racing-car-wallpaper-800x1280_198.jpg"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+	}
+	
+	#banner-06 {
+		background-image: url("../images/banner/mobile/ferrari-car-synthwave-wallpaper-1536x2048_203.jpg"), linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+	}
+	
+	.banner-info {
+		margin: 128px auto 0;
+	}
+
+	.banner__navigation {
+		display: none;
+	}
+	
+	.header .swiper-pagination {
+		left: unset;
+		right: unset;
+		bottom: 108px;
+		justify-content: center;
+	}
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+
+@media (max-width: 768px) {
+
+	.contacts-box__phone {
+		display: none;
+	}
+
+}
+/* ↑↑↑ 768px ↑↑↑ */
+
+
+
+@media (max-width: 534px) {
+	
+	.header__top {
+		height: 50px;
+		max-height: 50px;
+	}
+	
+	.logo {
+		width: 70px;
+		height: 25px;
+	}
+	
+	.contacts-box {
+		display: none;
+	}
+	
+	.tagline {
+		font-size: 14px;
+	}
+	
+	.banner-info {
+		margin: 32px auto 0;
+	}
+	
+	.subtitle {
+		font-size: 16px;
+	}
+	
+	.header__bottom {
+		margin-top: 50px;
+	}
+	
+}
+/* ↑↑↑ 534px ↑↑↑ */
+
+
+
+@media (max-width: 375px) {
+	
+}	
+/* ↑↑↑ 375px ↑↑↑ */
+
+
+
+@media (max-width: 320px) {
+	
+}	
+/* ↑↑↑ 320px ↑↑↑ */

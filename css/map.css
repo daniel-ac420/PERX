@@ -1,0 +1,111 @@
+.section--map {
+	position: relative;
+	min-height: 470px;
+	background: linear-gradient(110deg, #4e2032 0%, #583d9f 100%);
+}
+
+.map-description {
+	position: absolute;
+	top: 50%;
+	max-width: 400px;
+	padding: 24px;
+	background-color: var(--colorWhite);
+	border-radius: 18px;
+	box-shadow: 0 0 20px 0 rgba(22, 22, 22, 0.2);
+	transform: translate(0, -50%);
+}
+
+.map-description__title {
+	margin-bottom: 24px;
+	font-size: 28px;
+	line-height: 1;
+}
+
+.map-description__address {
+	margin-bottom: 24px;	
+	font-style: normal;
+}
+
+.map-description__items {
+	display: flex;
+	gap: 36px;
+	margin-bottom: 24px;
+}
+
+.map-description__phone {
+	margin-bottom: 8px;
+	font-family: "Proxima Nova Bold", Arial, sans-serif;
+	border: 1px solid transparent;
+}
+
+.map-description__title-item {
+	margin-bottom: 8px;
+	font-size: 14px;
+	line-height: 100%;
+	color: var(--colorGrayLight);
+}
+
+.map-description__shedule-box {
+	display: flex;
+	font-size: 14px;
+	color: var(--colorGrayAlternate);
+}
+
+.map-description__call:hover {
+	transform: unset;
+}
+
+.map-description__link-text {
+	height: 8px;
+}
+
+.map-description__link-decor {
+    width: 20px;
+    height: 20px;
+    background-image: url("../icons/map/map-icon-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map-description__call:hover .map-description__link-decor {
+	filter: invert(1);
+}
+
+.map-iframe {
+	width: calc(100vw - 15px);
+}
+
+
+
+@media(max-width: 1024px) {
+
+	.map-iframe {
+		width: 100vw;
+	}
+	
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+@media(max-width: 534px) {
+
+	.map-description {
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		padding: 16px 18px;
+		transform: translate(0, -16%);
+	}
+	
+	.map-description__title {
+		margin-bottom: 12px;
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	
+	.map-description__items {
+		margin-bottom: 20px;
+	}
+	
+}
+/* ↑↑↑ 534px ↑↑↑ */
